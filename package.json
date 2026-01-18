@@ -2,7 +2,10 @@
   "name": "permissionasaservice",
   "version": "1.0.0",
   "type": "module",
-  "main": "src/server.ts",
+  "main": "public/index.html",
+  "scripts": {
+    "check:permissions": "node scripts/checkPermissions.js"
+  },
   "keywords": [],
   "author": "corneryan",
   "license": "ISC",
