@@ -4,17 +4,14 @@
   "type": "module",
   "main": "src/server.ts",
   "scripts": {
-    "dev": "tsx watch src/server.ts",
-    "build": "tsc",
-    "start": "node dist/server.js"
+    "dev": "vercel dev"
   },
   "keywords": [],
   "author": "corneryan",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@vercel/node": "^5.5.23",
-    "express": "^5.2.1"
+    "@vercel/node": "^5.5.23"
   },
   "devDependencies": {
     "@types/express": "^5.0.6",
