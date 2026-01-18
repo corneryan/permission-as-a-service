@@ -1,13 +1,11 @@
-export default function weightedPick(items) {
-  const totalWeight = items.reduce((sum, item) => sum + item.weight, 0);
-  let random = Math.random() * totalWeight;
+export function weightedPick(items) {
+  const total = items.reduce((sum, i) => sum + i.weight, 0);
+  let rand = Math.random() * total;
 
   for (const item of items) {
-    if (random < item.weight) {
-      return item.text;
-    }
-    random -= item.weight;
+    if (rand < item.weight) return item.value;
+    rand -= item.weight;
   }
 
-  return items.at(-1).text;
+  return items[items.length - 1].value;
 }
