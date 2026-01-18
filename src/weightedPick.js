@@ -3,9 +3,9 @@ export function weightedPick(items) {
   let rand = Math.random() * total;
 
   for (const item of items) {
-    if (rand < item.weight) return item.value;
+    if (rand < item.weight) return item.text;
     rand -= item.weight;
   }
 
-  return items[items.length - 1].value;
+  return items[items.length - 1].text;
 }
