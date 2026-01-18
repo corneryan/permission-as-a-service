@@ -3,18 +3,11 @@
   "version": "1.0.0",
   "type": "module",
   "main": "src/server.ts",
-  "scripts": {
-    "dev": "vercel dev"
-  },
   "keywords": [],
   "author": "corneryan",
   "license": "ISC",
   "description": "",
   "dependencies": {
     "@vercel/node": "^5.5.23"
-  },
-  "devDependencies": {
-    "@types/node": "^25.0.9",
-    "typescript": "^5.9.3"
   }
 }
