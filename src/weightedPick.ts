@@ -14,6 +14,5 @@ export default function weightedPick(items: WeightedItem[]): string {
     random -= item.weight;
   }
 
-  // fallback (should never happen)
-  return items[0].text;
+  return items.at(-1)!.text;
 }

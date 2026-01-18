@@ -133,7 +133,7 @@
       let lastText = "";
 
       async function getPermission() {
-        const res = await fetch("/permission");
+        const res = await fetch("/api/permission");
         const data = await res.json();
 
         const result = document.getElementById("result");
