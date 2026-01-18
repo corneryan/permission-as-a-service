@@ -1,6 +1,6 @@
 import type { VercelRequest, VercelResponse } from "@vercel/node";
-import weightedPick from "../src/weightedPick.js";
 import { permissions } from "../src/permissions.js";
+import { weightedPick } from "../src/weightedPick.js";
 
 export default function handler(req: VercelRequest, res: VercelResponse) {
   const plain = req.query.plain === "true";

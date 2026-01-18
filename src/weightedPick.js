@@ -1,9 +1,4 @@
-type WeightedItem = {
-  text: string;
-  weight: number;
-};
-
-export default function weightedPick(items: WeightedItem[]): string {
+export default function weightedPick(items) {
   const totalWeight = items.reduce((sum, item) => sum + item.weight, 0);
   let random = Math.random() * totalWeight;
 
@@ -14,5 +9,5 @@ export default function weightedPick(items: WeightedItem[]): string {
     random -= item.weight;
   }
 
-  return items.at(-1)!.text;
+  return items.at(-1).text;
 }
